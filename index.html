@@ -1,0 +1,246 @@
+<html>
+  <head>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
+    <!-- <link rel="stylesheet" href="style.css">  This file is not present-->
+  </head>
+  
+  <link rel="stylesheet" href="beauty/pari-V_O_2/pari_ver_0_2.css">
+  <link rel="stylesheet" href="beauty/shunya/shunyaThemeV2.css">
+  <link rel="stylesheet" href="beauty/shunya/index-V-O-5-gk.css">
+  <link rel="stylesheet" href="beauty/pari-text-elements/pari-text-elements.css">
+  <link rel="stylesheet" href="beauty/pari-text-elements/nav.css">
+  <link rel="stylesheet" href="beauty/pari-text-elements/footer.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="beauty/pari-text-elements/sidenav.css">
+  
+  <style>
+
+  a{
+    color: var(--light);
+  }
+
+  header,section,ul,main{
+    display: block;
+  }
+  .item {
+      display: block;
+      overflow-wrap: break-word;
+      color: #ccc;
+      position: relative;
+  }
+
+  main{
+    margin-top: 70px;
+    min-width: 50%;
+    max-width: 70%;
+  }
+
+  body {
+      margin-bottom:50px;
+  }
+  article{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .item-title{
+    font-size: 2rem;
+  }
+
+  span{
+    color: aliceblue;
+  }
+
+  </style>
+
+  <body>
+  
+    <nav>
+      <section include="/sections/nav-shunya.html" class="navbar"></section>
+    </nav>
+
+    <article>
+      <!-- <aside id="nav_aside">
+       
+        <section class="sidebar">
+         
+              <i class='bx bx-menu' id="btn" ></i>
+          
+          <ul class="nav-list">
+
+            <li>
+                <a href="">
+                  <i class='bx bx-search' ></i>
+                </a>
+               <input type="text" placeholder="Search...">
+               <span class="tooltip">Search</span>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+               <span class="tooltip">Dashboard</span>
+            </li>
+            
+            <li>
+             <a href="#">
+               <i class='bx bx-user' ></i>
+               <span class="links_name">User</span>
+             </a>
+             <span class="tooltip">User</span>
+           </li>
+
+           <li>
+             <a href="#">
+               <i class='bx bx-chat' ></i>
+               <span class="links_name">Messages</span>
+             </a>
+             <span class="tooltip">Messages</span>
+           </li>
+
+           <li>
+             <a href="#">
+              <i class='bx bx-cog' ></i>
+               <span class="links_name">About</span>
+             </a>
+             <span class="tooltip">About</span>
+           </li>
+
+           <li>
+             <a href="#">
+              <i class='bx bx-cog' ></i>
+               <span class="links_name">Word</span>
+             </a>
+             <span class="tooltip">Work</span>
+           </li>
+
+           <li>
+             <a href="#">
+              <i class='bx bx-cog' ></i>
+               <span class="links_name">Stories</span>
+             </a>
+             <span class="tooltip">Stories</span>
+           </li>
+
+           <li>
+             <a href="#">
+               <i class='bx bx-cog' ></i>
+               <span class="links_name">Setting</span>
+             </a>
+             <span class="tooltip">Setting</span>
+           </li>
+
+          </ul>
+
+        </section>
+      
+      </aside> -->
+  <!--header include="/public/shunya/shunya_ek/sections/header-shunya.html"></header-->
+  <main >
+    <section>
+      <ul class="tree-nav">
+        <li>
+          <details class="item is-expandable">
+            <summary class="item-title">About</summary>
+            <section include="pages/about.html"></section>
+          </details>
+        </li>
+        <li>
+          <details class="item is-expandable">
+            <summary class="item-title">Work</summary>
+            <section include="pages/work.html"></section>
+          </details>
+        </li>
+        <li>
+          <details class="item is-expandable">
+            <summary class="item-title">Stories</summary>
+            <section include="pages/stories.html"></section>
+          </details>
+        </li>
+      </ul>
+     
+    </section>
+   
+  </main>
+
+  <!-- <aside id="aside-right">
+
+  </aside> -->
+
+</article>
+
+<footer>
+  <span>© 2021 Dot shunya ek ltd. Goa</span>
+  <span>this page is powered by [ ehh ]</span>
+</footer>
+
+
+
+<script src="function/includeHtml.js"></script>
+
+<script>
+  includeHTML();
+</script>
+
+<script>
+  const details = document.querySelectorAll("details");
+
+// Add the onclick listeners.
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    // Close all the details that are not targetDetail.
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
+</script>
+
+<script>
+  function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+  console.log("script loaded");
+  let btn = document.querySelector("#btn");
+  let sidebar = document.querySelector(".sidebar");
+  let searchBtn = document.querySelector("bx-search");
+
+  btn.addEventListener("click",(e)=>{
+   e.preventDefault();
+   console.log("click detected");
+   sidebar.classList.toggle("active");
+  })
+
+  searchBtn.onclick = function(){
+    sidebar.classList.toggle("active");
+  }
+ 
+  </script>
+
+</body>
+</html>

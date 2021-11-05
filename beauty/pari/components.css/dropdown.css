@@ -1,0 +1,13 @@
+ul[data-component="dropdown"] li:hover ul {
+    display: block;
+    background: var(--color-danger);
+  }
+  
+  ul[data-component="dropdown"] li:hover a {
+    color: #666;
+    text-shadow: none;
+  }
+  
+  ul[data-component="dropdown"] li:hover > a{
+    color: #000;
+  } 

@@ -1,0 +1,10 @@
+/* we have to change header height from 89px to 29.6px */
+
+header{
+    max-height: 29.6px;
+}
+
+/* Remove Nav-bar color */
+nav{
+    /* background-color: blue; */
+}

@@ -1,0 +1,11 @@
+[data-float="float-left"] {
+    float: left;
+}
+
+[data-float="float-right"] {
+    float: right;
+}
+
+[data-float="float-none"] {
+    float: none;
+}

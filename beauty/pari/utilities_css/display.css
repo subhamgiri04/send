@@ -1,0 +1,47 @@
+[data-display="d-none"] {
+    display: none;
+}
+
+[data-display="d-inline"] {
+    display: inline;
+}
+
+[data-display="d-inline-block"] {
+    display: inline-block;
+}
+
+[data-display="d-block"] {
+    display: block;
+}
+
+[data-display="d-table"] {
+    display: table;
+}
+
+[data-display="d-table-row"] {
+    display: table-row;
+}
+
+[data-display="d-table-cell"] {
+    display: table-cell;
+}
+
+[data-display="d-flex"] {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+[data-display="d-inline-flex"] {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+[data-display="d-grid"] {
+    display: -ms-grid;
+    display: grid;
+}
+
+[data-display="d-inline-grid"] {
+    display: -ms-inline-grid;
+    display: inline-grid;
+}

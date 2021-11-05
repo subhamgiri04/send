@@ -1,0 +1,358 @@
+/*
+https://codepen.io/oliviale/full/mgWjpq
+https://codepen.io/internette/pen/qogvJv
+*/
+
+/*
+
+*/
+
+ 
+body, html {
+  height: 100%;
+}
+
+
+:root{
+  
+  /*  dark and light */
+--dark:#343a40ff;
+--light:#f4f4ffff;
+--black: #0d0d0dff;
+--white:#ffffff;
+--grey:#909090ff;
+
+/* theme colors*/
+--color-primary: #007affff;
+--color-secondary-success:#27a844ff;
+--color-danger:#dc3546ff;
+--color-warning:#fec107ff;
+--color-info:#17a2b7ff;
+
+/* foundation theme
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+
+  */
+/*  Spacing :  Primarly used for margin and spacing.  */
+--sp-extra-tight: 4px;
+--sp-tight:8px;
+--sp-mid:12px;
+--sp-normal:16px;
+--sp-loose: 20px;
+--sp-extra-loose: 32px;
+
+
+/*
+sizes
+
+*/
+--smallest: 13px;
+--small:16px;
+--normal: 21px;
+--large:34px;
+--largest:55px;
+--gigantic: 89px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+/*
+sizes
+Primarly used for text. 
+*/
+--text-smallest: 13px;
+--text-small:16px;
+--text-normal: 21px;
+--text-large:34px;
+--text-largest:55px;
+--text-gigantic: 89px;
+
+--font-primary : 'Montserrat', sans-serif;
+--font-secondary : font-family: 'Raleway', sans-serif;
+--font-highlight : font-family: 'Montserrat', sans-serif;
+--f-size-base: 16px;
+--f-line-height-heading: 1.5;
+--f-line-height-body: 1.5;
+
+
+    
+
+/*
+pari.theme.breakpoints	
+    */
+--desktop-width: 1280px;
+--sm-desktop-width: 980px;
+--tab-width: 768px;
+--phone-width:480px;
+--sm-phone-width: 320px;
+
+
+/* background 
+--body-background : url("/assests/gfx/bg/shunyaWallaperBG_WO_circle.svg");*/
+
+/* Colors */
+
+color: var(--dark);
+
+}
+* {
+box-sizing: border-box;
+width: auto;
+height: auto;
+margin: 0;
+padding: 0;
+font-size: 1em;
+vertical-align: center;
+text-align: left;
+font-weight: normal;
+list-style-type: none;
+text-decoration: none;
+border: none;
+outline: none;
+resize: none;
+font-size: 100%;		
+font: inherit;		
+vertical-align: baseline;	
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+    
+/* HTML5 display-role reset for older browsers */		
+article,aside, details, figcaption, figure,		
+footer, header, hgroup, menu, nav, section {		
+display: block;		
+}	
+html{
+  font-size: 100%;
+
+}
+/*
+ Default body styles
+ */
+ body {
+  margin: 0;
+  padding: 0;
+/*
+  // using environment variables to account for non-rectangular displays e.g. phones with notches.
+*/
+/*
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+ */
+  background: var(--body-background);
+ 
+  
+/*
+  font-family: $body-font-family;
+  font-weight: $global-weight-normal;
+  line-height: $global-lineheight;
+  color: $body-font-color;
+
+  @if ($body-antialiased) {
+    -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+    -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  }
+  */
+}
+
+
+article{
+    
+  /* Take the remaining width */
+  flex: 1;
+
+  /* Make it scrollable */
+  overflow: auto;
+ 
+  /* Padding for content*/
+  padding-left: 13%;
+  padding-right: 13%;
+  
+}
+#shadow{
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+section{
+  margin: 3%;
+  border-style: solid;
+  position: relative;
+  display: flexbox;
+  
+  
+  padding: 1rem 1.5rem;
+  height:54vh;
+  
+}
+nav{
+  padding-top: 3%;
+  height: 144px;
+  display: flexbox;
+
+  align-items: center;
+}
+img{
+  height: 100%;
+}
+menu{
+  display: inline-block;
+}
+ul{
+  display: block;
+}
+li{
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  
+}
+#right{
+  float:right;
+}
+
+a,button{
+  
+  
+  text-align: center;
+  float: left;
+  padding: var(--sp-mid);
+  margin-left: var(--sp-mid);
+  margin-right: var(--sp-mid);
+  text-decoration: none;
+  font-size:var(--text-normal);
+  color: var(--dark);
+}
+/* @rashi, please choose button hover and other state animation*/
+a:hover {
+  color: var(--light);
+
+}
+
+/* please describe the rule.*/
+
+a:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+#submenu{
+  display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;  
+}
+a:hover .toggle-display {
+display: block;
+}
+
+footer{
+  position: absolute;
+  bottom: 0%;
+  display: block;
+  float: right;
+  height:34px;
+  border-style: solid;
+  align-items: center;
+  align-content: center;
+}
+
+[data-section="innerSection"] {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: flex .21s ease;
+    position: relative;
+  }
+[data-section="innerSection"]:hover {
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+ 
+[data-align="center"]{
+    float: left;
+ }
+[data-align="right"]{
+   float: right;
+}
+
+li{
+  font-size:var(--small-text);
+  padding:5px;
+  list-style-type: style;
+}
+/*// Make sure textarea takes on height automatically*/
+
+textarea {
+  height: auto;
+  min-height: 50px;
+  border-radius: var(--global-radius);
+}
+/*
+ Make select elements are 100% width by default
+*/
+
+select {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: var(--global-radius);
+}
+
+details {
+/*  border: 1px solid var(--dark);*/
+  /*
+  background: var(--dark);
+  */
+  
+
+  margin-bottom: 2rem;
+ 
+  
+ 
+}
+summary {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  p {
+    padding: 1rem 1.5rem;
+  }
+
+
+
+
+
+
+/*
+// Styles Google Maps and MapQuest embeds properly
+// sass-lint:disable-line no-ids
+
+
+.map_canvas,
+.mqa-display {
+  img,
+  embed,
+  object {
+    max-width: none !important;
+  }
+}
+*/

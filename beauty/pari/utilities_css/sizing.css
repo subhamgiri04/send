@@ -1,0 +1,163 @@
+/*width*/
+[data-width="w-25"] {
+    width: 2.5rem;
+}
+
+[data-width="w-50"] {
+    width: 5rem;
+}
+
+[data-width="w-100"] {
+    width: 10rem;
+}
+
+[data-width="w-150"] {
+    width: 15rem;
+}
+
+[data-width="w-200"] {
+    width: 20rem;
+}
+
+[data-width="w-250"] {
+    width: 25rem;
+}
+
+[data-width="w-300"] {
+    width: 30rem;
+}
+
+[data-width="w-350"] {
+    width: 35rem;
+}
+
+[data-width="w-400"] {
+    width: 40rem;
+}
+
+[data-width="w-450"] {
+    width: 45rem;
+}
+
+[data-width="w-500"] {
+    width: 50rem;
+}
+
+[data-width="w-550"] {
+    width: 55rem;
+}
+
+[data-width="w-600"] {
+    width: 60rem;
+}
+
+[data-width="w-auto"] {
+    width: auto;
+}
+
+[data-width="w-quarter"] {
+    width: 25%;
+}
+
+[data-width="w-half"] {
+    width: 50%;
+}
+
+[data-width="w-three-quarter"] {
+    width: 75%;
+}
+
+[data-width="w-full"] {
+    width: 100%;
+}
+
+[data-max-width="mw-full"] {
+    max-width: 100%;
+}
+
+/* Height */
+[data-height="h-20"]{
+    height:2rem;
+}
+
+[data-height="h-25"] {
+    height: 2.5rem;
+}
+[data-height="h-30"] {
+    height: 3rem;
+}
+[data-height="h-40"] {
+    height: 4rem;
+}
+
+[data-height="h-50"] {
+    height: 5rem;
+}
+
+[data-height="h-100"] {
+    height: 10rem;
+}
+
+[data-height="h-150"] {
+    height: 15rem;
+}
+
+[data-height="h-200"] {
+    height: 20rem;
+}
+
+[data-height="h-250"] {
+    height: 25rem;
+}
+
+[data-height="h-300"] {
+    height: 30rem;
+}
+
+[data-height="h-350"] {
+    height: 35rem;
+}
+
+[data-height="h-400"] {
+    height: 40rem;
+}
+
+[data-height="h-450"] {
+    height: 45rem;
+}
+
+[data-height="h-500"] {
+    height: 50rem;
+}
+
+[data-height="h-550"] {
+    height: 55rem;
+}
+
+[data-height="h-600"] {
+    height: 60rem;
+}
+
+[data-height="h-auto"] {
+    height: auto;
+}
+
+[data-height="h-quarter"] {
+    height: 25%;
+}
+
+[data-height="h-half"] {
+    height: 50%;
+}
+
+[data-height="h-three-quarter"] {
+    height: 75%;
+}
+
+[data-height="h-full"] {
+    height: 100%;
+}
+
+[data-max-height="mh-full"] {
+    max-height: 100%;
+}

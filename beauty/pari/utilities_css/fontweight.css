@@ -1,0 +1,27 @@
+[data-font-weight="font-weight-light"] {
+    font-weight: 300;
+}
+
+[data-font-weight="font-weight-lighter"] {
+    font-weight: lighter;
+}
+
+[data-font-weight="font-weight-normal"] {
+    font-weight: 400;
+}
+
+[data-font-weight="font-weight-medium"] {
+    font-weight: 500;
+}
+
+[data-font-weight="font-weight-semi-bold"] {
+    font-weight: 600;
+}
+
+[data-font-weight="font-weight-bold"] {
+    font-weight: 700;
+}
+
+[data-font-weight="font-weight-bolder"] {
+    font-weight: bolder;
+}

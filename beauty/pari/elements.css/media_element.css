@@ -1,0 +1,31 @@
+area {
+    display: none;
+}
+
+embed:focus {
+    outline: none;
+}
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}
+
+img {
+    display: inline-block;
+}
+
+link {
+    display: none;
+}
+
+map {
+    display: inline;
+}
+
+object:focus {
+    outline: none;
+}

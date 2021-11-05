@@ -1,0 +1,93 @@
+
+/* HTML font size and scaling */
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+}
+@media (min-width: 1600px) {
+    html {
+        font-size: 75%;
+    }
+}
+@media (min-width: 1920px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+    /*
+ Default body styles
+ */
+  body {
+    position:absolute; top:0; bottom:0; right:0; left:0; 
+    margin: 0;
+    padding: 0;
+/*
+    // using environment variables to account for non-rectangular displays e.g. phones with notches.
+*/
+
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+
+    
+    
+  }
+   
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+header{
+    height: 144px;
+}
+img{
+    height: inherit;
+}
+summary,a,button{
+    cursor: pointer;
+    user-select: none;  
+
+}
+a,button,input{
+    align-self: center;
+    display: inline-block;
+    text-decoration: none;
+   
+    padding-left: calc(3rem - 1rem);
+    padding-right: calc(3rem - 1rem);
+    height: 3.2rem;
+    
+}
+section {
+  
+    position: relative;
+    width: 89%;
+    margin: auto;
+    display: block;
+    padding-left: 5%;
+    padding-right: 13%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: auto;
+  }
+
+summary {
+    display: block;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  
+  

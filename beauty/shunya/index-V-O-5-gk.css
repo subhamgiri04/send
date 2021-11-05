@@ -1,0 +1,64 @@
+
+
+  .item.is-expandable::before {
+    border-left: 1px solid #333;
+    content: "";
+    height: 100%;
+    left: 0.8rem;
+    position: absolute;
+    top: 2.4rem;
+    height: calc(100% - 2.4rem);
+  }
+  .item .item {
+    margin-left: 2.4rem;
+  }
+  .item.is-expandable[open] > .item-title::before {
+    font-family: "ionicons";
+    transform: rotate(90deg);
+  }
+  .item.is-expandable > .item-title {
+    padding-left: 2.4rem;
+  }
+  .item.is-expandable > .item-title::before {
+    position: absolute;
+    will-change: transform;
+    transition: transform 300ms ease;
+    font-family: "ionicons";
+    color: #fff;
+    font-size: 1.1rem;
+    content: "\f125";
+    left: 0;
+    display: inline-block;
+    width: 1.6rem;
+    text-align: center;
+  }
+  
+  .item-title {
+    cursor: pointer;
+    display: block;
+    outline: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+  }
+  .item-title .icon {
+    display: inline;
+    padding-left: 1.6rem;
+    margin-right: 0.8rem;
+    color: #666;
+    font-size: 1.4rem;
+    position: relative;
+  }
+  .item-title .icon::before {
+    top: 0;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 1.6rem;
+    text-align: center;
+  }
+  
+  .item-title::-webkit-details-marker {
+    display: none;
+  }
+  

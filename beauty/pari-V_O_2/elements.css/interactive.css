@@ -1,0 +1,158 @@
+a:link {
+    color: (internal value);
+    text-decoration:none;
+    cursor: auto;
+}
+
+
+
+a,button {
+    min-width: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-highlight);
+    font-size: var(--text-normal);
+}
+a:visited {
+    color: (internal value);
+    text-decoration:none;
+    cursor: auto;
+}
+
+a:link:active {
+    color: (internal value);
+    text-decoration:none;
+}
+
+a:visited:active {
+    color: (internal value);
+    text-decoration:none;
+}
+
+datalist {
+    display: none;
+}
+
+details {
+    display: block;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+
+figcaption {
+    display: block;
+}
+
+figure {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+/* Forms */
+
+button:disabled,
+input:disabled {
+    background: var(--color-bg-secondary);
+    border-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    cursor: not-allowed;
+}
+
+button[disabled]:hover {
+    filter: none;
+}
+
+form {
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+    display: block;
+    max-width: var(--width-card-wide);
+    min-width: var(--width-card);
+    padding: 1.5rem;
+    text-align: var(--justify-normal);
+}
+
+form header {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+}
+
+input,
+label,
+select,
+textarea {
+    display: block;
+    font-size: inherit;
+    max-width: var(--width-card-wide);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    top: 1px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+input[readonly],
+textarea[readonly] {
+    background-color: var(--color-bg-secondary);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+output {
+    display: inline;
+}
+
+script {
+    display: none;
+}
+
+summary {
+    display: block;
+}

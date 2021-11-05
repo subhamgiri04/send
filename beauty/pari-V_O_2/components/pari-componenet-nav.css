@@ -1,0 +1,109 @@
+   
+  /* horizontal menu */
+
+
+  nav ul {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      list-style-type: none;
+      overflow: visible;
+  }
+  
+  nav ul li {
+      display: block;
+      float: left;
+      height: auto;
+      /* menu header's items width */
+      width: 120px;
+  }
+  
+  nav li > span, nav li > a, nav li > a:link,
+  nav li > a:visited, nav li > a:active {
+      display: block;
+      padding: 0 0 0 10px;
+      height: 100%;
+      width: 109px;
+    /*
+    border-right: 1px #5d5636 solid;
+    */
+      
+      line-height: 30px;
+      text-decoration: none;
+    /*
+    background-color: #fffabf;
+    */
+      
+      
+      cursor: pointer;
+  }
+  
+  nav li:hover > span, nav li:hover > a {
+      color: #220000;
+      background-color: var(--dark);
+  }
+  
+  /* vertical sub-menus */
+  
+  nav ul ul {
+      margin-top: 2px;
+      display: none;
+      position: static;
+      height: auto;
+      /* vertical-menus width */
+      width: 160px;
+      border: 1px #666666 solid;
+      background-color: #dddddd;
+  }
+  
+  nav li:hover > ul {
+      display: block;
+  }
+  
+  nav ul ul li {
+      position: relative;
+      float: none;
+      display: block;
+      height: 28px;
+      width: 100%;
+      border: none;
+  }
+  
+  nav ul ul li > span, nav ul ul li > a,
+  nav ul ul li > a:link, nav ul ul li > a:visited,
+  nav ul ul li > a:active {
+      height: 100%;
+      width: 96%;
+      padding: 0 0 0 4%;
+      line-height: 28px;
+      background-color: transparent;
+      border: none;
+      color: #000000;
+      
+      font-style: normal;
+  }
+  
+  nav ul ul li:hover > span, nav ul ul li:hover > a {
+      background-color: #cccccc;
+  
+  }
+  
+  /* vertical sub-sub-menus */
+  
+  nav ul ul ul {
+      /* sub-sub-menu position is relative to its parent */
+      position: absolute;
+      top: 4px;
+      left: 155px;
+      margin: 0;
+  }
+  
+  /* an arrow on the right side of menu's folders */
+  
+  span.child:after, a.child:after {
+      content: "\00BB";
+      float: right;
+      margin-right: 8px;
+  }

@@ -1,0 +1,59 @@
+[data-text-align="text-justify"] {
+    text-align: justify;
+}
+
+[data-text-wrap="text-wrap"] {
+    white-space: normal;
+}
+
+[data-text-wrap="text-nowrap"] {
+    white-space: nowrap;
+}
+
+[data-text-wrap="text-truncate"] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+[data-text-align="text-left"] {
+    text-align: left;
+}
+
+[data-text-align="text-right"] {
+    text-align: right;
+}
+
+[data-text-align="text-center"] {
+    text-align: center;
+}
+
+[data-text-transform="text-lowercase"] {
+    text-transform: lowercase;
+}
+
+[data-text-transform="text-uppercase"] {
+    text-transform: uppercase;
+}
+
+[data-text-transform="text-capitalize"] {
+    text-transform: capitalize;
+}
+
+[data-text-decoration="text-decoration-none"] {
+    text-decoration: none;
+}
+
+[data-text-decoration="text-decoration-underline"] {
+    text-decoration: underline;
+}
+
+[data-text-spacing="text-extra-letter-spacing"] {
+    /* Improves readability in most cases */
+    letter-spacing: 0.03rem;
+}
+
+[data-text-spacing="text-extra-letter-spacing"] * {
+    /* Improves readability in most cases */
+    letter-spacing: 0.03rem;
+}

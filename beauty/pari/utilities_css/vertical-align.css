@@ -1,0 +1,23 @@
+[data-vertical-align="align-baseline"] {
+    vertical-align: baseline;
+}
+
+[data-vertical-align="align-top"] {
+    vertical-align: top;
+}
+
+[data-vertical-align="align-middle"] {
+    vertical-align: middle;
+}
+
+[data-vertical-align="align-bottom"] {
+    vertical-align: bottom;
+}
+
+[data-vertical-align="align-text-bottom"] {
+    vertical-align: text-bottom;
+}
+
+[data-vertical-align="align-text-top"] {
+    vertical-align: text-top;
+}

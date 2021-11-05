@@ -1,0 +1,7 @@
+[data-pointer-events="pointer-events-auto"] {
+    pointer-events: auto;
+}
+
+[data-pointer-events="pointer-events-none"] {
+    pointer-events: none;
+}

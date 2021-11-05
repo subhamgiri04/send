@@ -1,0 +1,79 @@
+[data-border="border"] {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-border="border-top"] {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-border="border-bottom"] {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-border="border-left"] {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-border="border-right"] {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="light-mode"] [data-border="border"] {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light-mode"] [data-border="border-top"] {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light-mode"] [data-border="border-bottom"] {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light-mode"] [data-border="border-left"] {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light-mode"] [data-border="border-right"] {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+[data-border="border-0"] {
+    border: none;
+}
+
+[data-border="border-top-0"] {
+    border-top: none;
+}
+
+[data-border="border-bottom-0"] {
+    border-bottom: none;
+}
+
+[data-border="border-left-0"] {
+    border-left: none;
+}
+
+[data-border="border-right-0"] {
+    border-right: none;
+}
+
+[data-border-transparent="border-transparent"] {
+    border: 1px solid transparent;
+}
+
+[data-border-transparent="border-top-transparent"] {
+    border-top: 1px solid transparent;
+}
+
+[data-border-transparent="border-bottom-transparent"] {
+    border-bottom: 1px solid transparent;
+}
+
+[data-border-transparent="border-left-transparent"] {
+    border-left: 1px solid transparent;
+}
+
+[data-border-transparent="border-right-transparent"] {
+    border-right: 1px solid transparent;
+}

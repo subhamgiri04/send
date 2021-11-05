@@ -1,0 +1,35 @@
+[data-overflow="overflow-hidden"] {
+    overflow: hidden;
+}
+
+[data-overflow-x="overflow-x-hidden"] {
+    overflow-x: hidden;
+}
+
+[data-overflow-y="overflow-y-hidden"] {
+    overflow-y: hidden;
+}
+
+[data-overflow="overflow-auto"] {
+    overflow: auto;
+}
+
+[data-overflow-x="overflow-x-auto"] {
+    overflow-x: auto;
+}
+
+[data-overflow-y="overflow-y-auto"] {
+    overflow-y: auto;
+}
+
+[data-overflow="overflow-scroll"] {
+    overflow: scroll;
+}
+
+[data-overflow-x="overflow-x-scroll"] {
+    overflow-x: scroll;
+}
+
+[data-overflow-y="overflow-y-scroll"] {
+    overflow-y: scroll;
+}

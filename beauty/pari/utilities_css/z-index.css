@@ -1,0 +1,41 @@
+[data-z-index="z-0"] {
+    z-index: 0;
+}
+[data-z-index="z-1"] {
+    z-index: 1;
+}
+[data-z-index="z-2"] {
+    z-index: 2;
+}
+[data-z-index="z-3"] {
+    z-index: 3;
+}
+[data-z-index="z-4"] {
+    z-index: 4;
+}
+[data-z-index="z-5"] {
+    z-index: 5;
+}
+[data-z-index="z-10"] {
+    z-index: 10;
+}
+
+[data-z-index="z-20"] {
+    z-index: 20;
+}
+
+[data-z-index="z-30"] {
+    z-index: 30;
+}
+
+[data-z-index="z-40"] {
+    z-index: 40;
+}
+
+[data-z-index="z-50"] {
+    z-index: 50;
+}
+
+[data-z-index="z-auto"] {
+    z-index: auto;
+}

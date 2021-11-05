@@ -1,0 +1,7 @@
+[data-visibility="visible"] {
+    visibility: visible;
+}
+
+[data-visibility="invisible"] {
+    visibility: hidden;
+}

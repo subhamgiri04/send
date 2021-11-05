@@ -1,0 +1,183 @@
+/* HTML font size and scaling */
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+}
+@media (min-width: 1600px) {
+    html {
+        font-size: 75%;
+    }
+}
+@media (min-width: 1920px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+    /*
+ Default body styles
+ */
+  body {
+    margin: 0;
+    padding: 0;
+/*
+    // using environment variables to account for non-rectangular displays e.g. phones with notches.
+*/
+
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+
+    background: var(--body-background);
+
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    
+    
+  }
+   
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header{
+        align-items: baseline;
+       
+        height: 89px;
+        
+    }
+
+nav{
+    display: block;
+    border-style: solid;
+    
+}
+.submenu{
+ display: none;
+}
+menu{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+}
+nav>menu>li{
+  margin:1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0.35em 0 0.7em 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.85em;
+}
+
+a,button {
+    padding-left: calc(3rem - 1rem);
+    padding-right: calc(3rem - 1rem);
+    display: inline-block;
+     color: var(--color-primary);
+     text-decoration: none;
+  text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-highlight);
+    font-size: var(--text-normal);
+}
+
+
+
+
+
+a:hover:not(.button) {
+  opacity: 0.75;
+}
+
+p {
+  margin-top: 0;
+}
+.submenu{
+      display: none;
+      position: absolute;
+      
+
+    }
+    
+  menu li:hover>.submenu{
+    display:block;
+  }
+  .submenu .submenu{
+    left:6%;
+    top:0;
+  }
+  main {
+  position: relative;
+  z-index: 2;
+  background-color: inherit;
+  box-shadow: 0 4px 35px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  width:80px;
+}
+nav menu li main label,nav menu li main #toggle {
+  height: 2rem;
+  border-radius: 100px;
+}
+label {
+  width:80px;
+  background-color:var(--grey);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+nav menu li main #toggle {
+  position: absolute;
+  width: 50%;
+  background-color:black;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+[type="checkbox"] {
+  display: none;
+}
+[type="checkbox"]:checked  ~ header nav menu li main #toggle{
+  transform: translateX(100%);
+  background-color:white;
+}

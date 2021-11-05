@@ -1,0 +1,30 @@
+[data-color="black"]{
+    color:var(--black);
+}
+[data-color="white"]{
+    color:var(--white);
+}
+[data-color="grey"]{
+    color:var(--grey);
+}
+[data-color="dark"]{
+    color:var(--dark);
+}
+[data-color="light"]{
+    color:var(--light);
+}
+[data-color="primary"]{
+    color:var(--color-primary);
+}
+[data-color="secondary-success"]{
+    color:var(--color-secondary-success);
+}
+[data-color="warning"]{
+    color:var(--color-warning);
+}
+[data-color="danger"]{
+    color:var(--color-danger);
+}
+[data-color="info"]{
+    color:var(--color-info);
+}

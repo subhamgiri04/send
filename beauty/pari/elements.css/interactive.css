@@ -1,0 +1,84 @@
+a:link {
+    color: (internal value);
+    text-decoration:none;
+    cursor: auto;
+}
+a {
+    min-width: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-highlight);
+    font-size: var(--text-normal);
+}
+a:visited {
+    color: (internal value);
+    text-decoration:none;
+    cursor: auto;
+}
+
+a:link:active {
+    color: (internal value);
+    text-decoration:none;
+}
+
+a:visited:active {
+    color: (internal value);
+    text-decoration:none;
+}
+
+datalist {
+    display: none;
+}
+
+details {
+    display: block;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+
+figcaption {
+    display: block;
+}
+
+figure {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+output {
+    display: inline;
+}
+
+script {
+    display: none;
+}
+
+summary {
+    display: block;
+}

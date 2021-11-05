@@ -1,0 +1,45 @@
+/*
+We can have a slightl better syantax for few properties. for eg.
+data-pari = bg-white
+
+*/
+
+[data-bg="bg-white"] {
+    background-color: var(--white);
+}
+
+[data-bg="bg-light"] {
+    background-color: var(--light);
+}
+
+[data-bg="bg-black"] {
+    background-color: var(--black);
+}
+
+[data-bg="bg-grey"] {
+    background-color: var(--grey);
+}
+
+[data-bg="bg-dark"] {
+    background-color: var(--dark);
+}
+
+[data-bg="bg-primary"] {
+    background-color: var(--color-primary);
+}
+
+[data-bg="bg-secondary-success"] {
+    background-color: var(--color-secondary-success);
+}
+
+[data-bg="bg-warning"] {
+    background-color: var(--color-warning);
+}
+
+[data-bg="bg-danger"] {
+    background-color: var(--color-danger);
+}
+
+[data-bg="bg-info"] {
+    background-color: var(--color-info);
+}
