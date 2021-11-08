@@ -65,6 +65,31 @@
                 </ul>
             </nav>
         </aside>
+        <main>
+            <div>
+                <button id="back">Back</button>
+            
+                <span id="sorting">
+                    Sort By: <select name="" id="sortSel">
+                        <option value="n" selected>Name</option>
+                        <option value="d">Date Created</option>
+                        <option value="s">Size</option>
+                    </select>
+            
+                    Reverse: <input type="checkbox" id="sortRev">
+                </span>
+            </div>
+            
+            <div id="root" class="root">
+                <ul></ul>
+                <button id="createBtn">Create new Entry</button>
+            </div>
+            
+            
+        </main>
     </article>
+    
+    <script src="../function/tree.js"></script>
+
 </body>
 </html>

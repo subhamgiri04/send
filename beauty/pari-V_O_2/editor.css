@@ -113,3 +113,13 @@ svg {
 #search-input::placeholder {
   padding-left: 1.5rem;
 }
+
+article {
+  display: flex;
+}
+
+main {
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 2rem;
+}
